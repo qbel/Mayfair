@@ -1,0 +1,169 @@
+#about{
+    background-image: url("../img/sketch2.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top:70px;
+  }
+#line{
+    margin-top:5px;
+    color: orange;
+}
+.card-img-top{
+    height: 350px;
+}
+.card.card-cascade.wider .card-body.card-body-cascade {
+    background-color: gray;
+    color:white;
+    margin-left: 20%;
+    font-size:13px;
+
+}
+#menu ul li {
+    list-style-type: none;
+  }
+  #menu ul li::before {
+    content: "\2192";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ffa500; /* Change the color */
+    font-weight: bolder; /* If you want it to be bold */
+    /* font-size:30px; */
+    display: inline-block; /* Needed to add space between the bullet and the text */ 
+    width: 2em; /*Also needed for space (tweak if needed)
+    /* margin-left: -1em; Also needed for space (tweak if needed) */
+  }
+#footer{
+    background-image: url("../img/footer2.jpg"); /* The image used */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-top:70px;
+}
+#get{
+    margin-left:80px;
+    font-weight: bolder;
+}
+#contact{
+    margin-right:150px;
+}
+#bottom{
+    margin-left:70px;
+}
+#okay{
+    background-color:gray;
+    width: 70%;
+}
+/* .overlay1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 3;
+    transition: .5s ease;
+    background-color: silver;
+  }
+  
+  .container:hover .overlay1 {
+    opacity: 1;
+  } */
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+#now{
+    padding-left:23px;
+    padding-right:23px;
+    font-size:14px;
+}
+#clients{
+    padding-left:14px;
+    font-weight: bolder;
+}
+#down{
+    padding-left:25px;
+    padding-right: 25px;
+}
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1a1a1a !important;
+    }
+    .card.card-cascade.wider .card-body.card-body-cascade {
+        background-color: gray;
+        color:white;
+        margin-left: 4%;
+        font-size:13px;
+    
+    }
+    #get{
+        margin-left:0px;
+    }
+    #contact{
+        margin-right:0px;
+    }
+    #bottom{
+        margin-left:0px;
+        
+    }
+    #now{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    #clients{
+        padding-left:14px;
+        font-weight: bolder;
+    }
+}
+
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{
+    height:100%
+}
+.navbar{
+    background-color:rgba(0,0,0,.2)
+}
+.page-footer,.top-nav-collapse{
+    background-color:#1a1a1a;
+}
+@media only screen and (max-width:768px){
+    .navbar{
+        background-color:#1a1a1a
+    }
+
+    .card.card-cascade.wider .card-body.card-body-cascade {
+        background-color: gray;
+        color:white;
+        margin-left: 4%;
+        font-size:13px;
+    
+    }
+    #get{
+        margin-left:0px;
+    }
+    #contact{
+        margin-right:0px;
+    }
+    #bottom{
+        margin-left:0px;
+        text-align: center;
+    }
+    #social{
+        text-align: center;
+    }
+    #now{
+        padding-left:0px;
+        padding-right:0px;
+    }
+    #down{
+        padding-left:10px;
+        padding-right: 10px;
+    }
+   
+}
