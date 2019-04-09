@@ -5,74 +5,112 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Mayfair</title>
+  <meta name="furniture designs, interior design, office spaces design company lagos" content="HTML,CSS,JavaScript">
+  <title>MayFair</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="scss/style.scss" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-  
+  <!--Pop Up -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
+
   <link rel="shortcut icon" type="image/png" href="img/fav.png"/>
-  <script>
-  
-  
-  
-  </script>
 </head>
+
 <body>
-
-    <div id="app" class="wrapper" v-cloak v-bind:class="{'is-previous': isPreviousSlide, 'first-load': isFirstLoad}">
-        <div class="slide-wrapper" 
-             v-for="(slide, index) in slides" 
-             v-bind:class="{ active: index === currentSlide }"
-             v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
-            <div class="slide-inner">
-                <div class="slide-bg-text">
-                    <p>{{ slide.headlineFirstLine }}</p>
-                    <p>{{ slide.headlineSecondLine }}</p>
-                </div>
-                <div class="slide-rect-filter">
-                    <div class="slide-rect" v-bind:style="{'border-image-source': 'url(' + slide.rectImg + ')'}"></div>
-                </div>
-                <div class="slide-content">
-                    <h1 class="slide-content-text"><p>{{ slide.headlineFirstLine }}</p><p>{{ slide.headlineSecondLine }}</p></h1><a class="slide-content-cta">Call To Action</a></div>
-                <h2 class="slide-side-text"><span>{{ slide.sublineFirstLine }} / </span><span>{{ slide.sublineSecondLine }}</span></h2></div>
+ 
+    <div id="myBtnContainer" style="text-align:center" class="mt-5 mb-3">
+        <button class="btn active" onclick="filterSelection('all')"> All Projects</button>
+        <button class="btn" onclick="filterSelection('hospitality')"> Hospitality</button>
+        <button class="btn" onclick="filterSelection('commercial')"> Commercial</button>
+        <button class="btn" onclick="filterSelection('office')"> Office</button>
+        <button class="btn" onclick="filterSelection('residential')"> Residential</button>
+        <button class="btn" onclick="filterSelection('interior')"> Interior</button>
+    </div>
+    <!-- Portfolio Gallery Grid -->
+    
+    <div class="row">
+        <div class="column hospitality">
+          <div class="content">
+            <a href="img/pf-71.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-71.jpg" alt="Mountains" style="width:100%"></a>
+            <!-- <h4>Mountains</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
         </div>
-    <div class="controls-container">
-        <button class="controls-button" 
-                v-for="(slide, index) in slides"
-                v-bind:class="{ active: index === currentSlide }"
-                v-on:click="updateSlide(index)">{{ slide.headlineFirstLine }} {{ slide.headlineSecondLine }}</button>
+        <div class="column hospitality">
+          <div class="content">
+              <a href="img/pf-11.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-11.jpg" alt="Lights" style="width:100%"></a>
+            <!-- <h4>Lights</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
+        </div>
+      
+        <div class="column commercial">
+          <div class="content">
+              <a href="img/pf-8.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-8.jpg" alt="Car" style="width:100%"></a>
+            <!-- <h4>Retro</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
+        </div>
+        <div class="column office">
+          <div class="content">
+              <a href="img/pf-9.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-9.jpg" alt="office" style="width:100%"></a>
+            <!-- <h4>Woman</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
+        </div>
+        <div class="column residential">
+          <div class="content">
+              <a href="img/pf-6.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-6.jpg" alt="residential" style="width:100%"></a>
+            <!-- <h4>Woman</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
+        </div>
+        <div class="column interior">
+          <div class="content">
+              <a href="img/pf-10.jpg" data-fancybox="images"  data-height="1365">
+            <img src="img/pf-10.jpg" alt="interior" style="width:100%"></a>
+            <!-- <h4>Woman</h4> -->
+            <!-- <p>Lorem ipsum dolor..</p> -->
+          </div>
+        </div>
+      <!-- END GRID -->
+      </div>
+     
+      
+
+      
     </div>
-    <div class="pagination-container">
-        <span class="pagination-item"
-              v-for="(slide, index) in slides"
-              v-bind:class="{ active: index === currentSlide }"
-              v-on:click="updateSlide(index)"></span>
-    </div>
-</div>
-
-
-
-
-
-
- <!-- SCRIPTS -->
+  
+   
+  <!-- SCRIPTS -->
   <!-- JQuery -->
+  <script type="text/javascript" src="js/new.js"></script>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+
+  <!--Pop Up with icons-->
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+  
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
-  <script>
-  
-  </script>
 </body>
 
 </html>
+
+
+
+
