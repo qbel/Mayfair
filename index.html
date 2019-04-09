@@ -68,8 +68,8 @@
             </ul>
   
           <!-- Right -->
-          <!-- <ul class="navbar-nav nav-flex-icons">
-            <li class="nav-item">
+          <ul class="navbar-nav nav-flex-icons">
+            <!-- <li class="nav-item">
               <a href="https://www.facebook.com/mdbootstrap" class="nav-link" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
@@ -78,14 +78,18 @@
               <a href="https://twitter.com/MDBootstrap" class="nav-link" target="_blank">
                 <i class="fab fa-twitter"></i>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
+              <!-- <a href="https://github.com/mdbootstrap/bootstrap-material-design" class="nav-link border border-light rounded"
                 target="_blank">
-                <i class="fab fa-github mr-2"></i>MDB GitHub
-              </a>
+                <i class="fa fa-github mr-2"></i>MDB GitHub
+              </a> -->
+              <!-- Search form -->
+              <form class="form-inline">
+                  <input class="form-control white-text" type="text" placeholder="&#x1F50E; Search" aria-label="Search" style="background-color: transparent;">
+              </form>
             </li>
-          </ul> -->
+          </ul>
   
         </div>
   
@@ -115,7 +119,7 @@
               
               <!-- Content -->
               <div class="row">
-                 <h1 class="yellow-text">01<sup>/03</sup></h1>
+                 <h1 class="yellow-text font-weight-bold">01<sup>/03</sup></h1>
               </div>
               <div class="text-left white-text mx-5 wow fadeIn mt-5">
                   <p>
@@ -131,7 +135,7 @@
                
   
                 <p class="mb-4 mt-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4.</strong>
+                  <strong>Full-service Architecture and Hospitality Interior Design Firm</strong>
                 </p>
   
                 <a target="" href="#" class="btn btn-outline-white btn-lg mt-3">View Project
@@ -158,7 +162,7 @@
   
               <!-- Content -->
               <div class="row">
-                  <h1 class="yellow-text">02<sup>/03</sup></h1>
+                  <h1 class="yellow-text font-weight-bold">02<sup>/03</sup></h1>
                </div>
               <div class="text-left white-text mx-5 wow fadeIn mt-5">
                   <p>
@@ -169,7 +173,7 @@
                     </h1>
   
                 <p class="mb-4 mt-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4</strong>
+                  <strong>Full-service Architecture and Hospitality Interior Design Firm</strong>
                 </p>
   
                 <a target="" href="#" class="btn btn-outline-white btn-lg mt-3">View Project
@@ -193,7 +197,7 @@
   
               <!-- Content -->
               <div class="row">
-                  <h1 class="yellow-text">03<sup>/03</sup></h1>
+                  <h1 class="yellow-text font-weight-bold">03<sup>/03</sup></h1>
                </div>
               <div class="text-left white-text mx-5 wow fadeIn mt-5">
                   <p>
@@ -205,7 +209,7 @@
                
   
                 <p class="mb-4 mt-4 d-none d-md-block">
-                  <strong>The most comprehensive tutorial for the Bootstrap 4. Loved by over 500 000 users.</strong>
+                  <strong>Full-service Architecture and Hospitality Interior Design Firm</strong>
                 </p>
   
                 <a target="" href="#" class="btn btn-outline-white btn-lg mt-3">View Project
@@ -334,24 +338,24 @@
               </p>
           </div>
         </div> -->
-        <div class="row p-0 m-0 mt-5 mb-5">
-          <div></div>
-          <div class="col-md-8">
+        <div class="row p-0 m-0 mt-5 mb-5" id="newest" >
+          <div class="col-md-7 offset-1">
             <h2 class=" text-black mb-5 h1-responsive font-weight-bold my-5">We've been Designing For <br>almost <span style="color:#ffa500">24 Years.</span></h2>
             <p class="mb-5">Our long history of existence has provided financial reassurance, business continuity and stability. It has also created firm foundations from which to promote design as we expand into new territories. And now, as an established brand, While we view the world and the built environment from multiple perspectives, our studios and our people are wholly connected and interdependent.</p>
             <p><h6><u id="line"><a href="#" style="font-weight:bolder;color:black">About Us</a></u></h6></p>
           </div>
           <div class="col-md-4 mt-5 pl-5">
-              <p class="font-weight-bold"><i class="fa fa-building fa-3x orange-text pr-3" aria-hidden="true"></i>Architecture</p>
-              <p class="font-weight-bold mt-4"><i class="fa fa-home fa-3x orange-text pr-3" aria-hidden="true"></i>Interior Design</p>
-              <p class="font-weight-bold mt-4"><i class="fa fa-building fa-3x orange-text pr-3" aria-hidden="true"></i>Exterior Design</p>
-              <p class="font-weight-bold mt-4"><i class="fa fa-home fa-3x orange-text pr-3" aria-hidden="true"></i>Planning</p>
+              <p class="font-weight-bold"><i class="fa fa-building fa-2x orange-text pr-3" aria-hidden="true"></i>Architecture</p>
+              <p class="font-weight-bold mt-4"><i class="fa fa-home fa-2x orange-text pr-3" aria-hidden="true"></i>Interior Design</p>
+              <p class="font-weight-bold mt-4"><i class="fa fa-building fa-2x orange-text pr-3" aria-hidden="true"></i>Exterior Design</p>
+              <p class="font-weight-bold mt-4"><i class="fa fa-home fa-2x orange-text pr-3" aria-hidden="true"></i>Planning</p>
           </div>
         </div>
-        <div class="mb-0 mt-5" id="clients">
+        <!-- <div class="mb-0 mt-5" id="clients">
             <h4 class="font-weight-bold">Our Progress</h4>
-         </div>
-        <div class="row" id="about" >
+         </div> -->
+        <div class="row newest" id="about" >
+            <h4 class="font-weight-bold pl-3 mb-5">Our Progress</h4>
             <div class="container text-center">
                 <table class="table table-hover">
                   <!-- <thead>
@@ -412,16 +416,17 @@
                 </table>
             </div>
           </div>
-         <div class="mb-0 mt-5" id="clients">
+         <!-- <div class="mb-0 mt-5" id="clients">
             <h4 class="font-weight-bold">Our Specialization</h4>
-         </div>
-          <div class="row mt-5">
+         </div> -->
+          <div class="row mt-5 mb-5" id="newest" style="">
+              <h4 class="font-weight-bold pl-3 mb-5">Our Specialization</h4>
             <div class="container">
               <!-- Card deck -->
-              <div class="card-deck">
+              <div class="card-deck" >
 
                 <!-- Card -->
-                <div class="card mb-4">
+                <div class="card mb-4" id="mary">
                   <!--Card image-->
                   <div class="view overlay">
                     <img class="card-img-top" src="img/six.jpg" alt="Card image cap">
@@ -435,7 +440,7 @@
                 <!-- Card -->
 
                 <!-- Card -->
-                <div class="card mb-4">
+                <div class="card mb-4" id="mary">
                   <!--Card image-->
                   <div class="view overlay">
                     <img class="card-img-top" src="img/three.jpg" alt="Card image cap">
@@ -449,11 +454,11 @@
                 <!-- Card -->
 
                 <!-- Card -->
-                <div class="card mb-4">
+                <div class="card mb-4" id="mary" >
 
                   <!--Card image-->
                   <div class="view overlay">
-                    <img class="card-img-top" src="img/four.jpg" alt="Card image cap">
+                    <img class="card-img-top " src="img/four.jpg" alt="Card image cap">
                     <a href="#">
                         <div class="mask flex-center waves-effect waves-light rgba-black-strong">
                           <p class="white-text p-3"><span style="font-size:20px;color:orange;font-weight:bolder">Exterior Design<br></span> We believe in the power of inspirational Design to deliver commercial success. We visoin is to create the world's leading creative design team.</p>
@@ -469,148 +474,157 @@
           </div>
 
           
-          <div class="mb-0 mt-5" id="clients">
-              <h4 class="font-weight-bold">Our Clients</h4>
-           </div>
-          <div class="row mt-3">
-            <div class="col-md-4">
+          <!-- <div class="mb-0 mt-5" id="clients">
+              <h4 class="font-weight-bold pl-3 mb-5">Our Clients</h4>
+           </div> -->
+          <div class="row mt-5" id="newest">
+              <div class="mb-0">
+                  <h4 class="font-weight-bold pl-3">Our Clients</h4>
+               </div>
+              <div class="row p-0 m-0">
+                <div class="col-md-5">
                 
-              <!-- Section: Testimonials v.4 -->
-              <section class="text-center my-5">
-                  <!-- Grid row -->
-                  <div class="row pt-5 pb-3" style="background-color:#808080;border-radius:15px" >
-                    
-                    <!--Carousel Wrapper-->
-                    <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item mb-5" data-ride="carousel">
-                
-                      <!--Controls-->
-                      <!-- <div class="controls-top">
-                        <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                        <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
-                      </div> -->
-                      <!--Controls-->
-                
-                      <!--Indicators-->
-                      <ol class="carousel-indicators">
-                        <li data-target="#multi-item-example" data-slide-to="0" class="active white darken-4"></li>
-                        <li data-target="#multi-item-example" data-slide-to="1" class="white darken-4"></li>
-                        <li data-target="#multi-item-example" data-slide-to="2" class="white darken-4"></li>
-                      </ol>
-                      <!--Indicators-->
-                
-                      <!--Slides-->
-                      <div class="carousel-inner" role="listbox">
-                
-                        <!--First slide-->
-                        <div class="carousel-item active">
-                          <div class="row">
-                             <!--Grid column-->
-                            <div class="col-md-10 offset-1">
-                                <div class="testimonial">
-                                  
-                                  <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>Mayfair Design Studio is one of the most professional and creative Architectural firms I have ever worked with. Their attention to detail and leading design trends make them one of the best firms I have ever worked with.</p>
-                                    <h6 class="font-weight-bold mt-4  white-text">Michael Momodu<span style="color:orange"> Customer</span></h6>
-                                    <!-- <h6 class="blue-text font-weight-bold my-3">Web Designer</h6> -->
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                         
-                        <!--First slide-->
-                
-                        <!--Second slide-->
-                        <div class="carousel-item">
-                
-                         <div class="row">
-                            <!--Grid column-->
-                            <div class="col-md-10 offset-1">
-                              <div class="testimonial">
-                                <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>Working with Mayfair has been a pleasure and a positive experience. The design team went above and beyond their call of duty. We ended up with an environment that is beautiful, functional and very unique.</p>
-                                  <h6 class="font-weight-bold mt-4 white-text">Vivienne Kolade <span style="color:orange"> Customer</span></h6>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <!--Second slide-->
-                        <!--third slide-->
-                        <div class="carousel-item">
-                        
-                            <div class="row">
-                              <!--Grid column-->
-                              <div class="col-md-10 offset-1">
-                                <div class="testimonial">
-                                  <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>I want to thank each of you for your efforts and “out of the box” performance in completing this project. I am very appreciative of the cooperation and flexibility your company utilized to achieve this successful completion.</p>
-                                    <h6 class="white-text font-weight-bold mt-4">Godwin Director <span style="color:orange">Construction</h6>
+                    <!-- Section: Testimonials v.4 -->
+                    <section class="text-center my-5">
+                        <!-- Grid row -->
+                        <div class="row pt-5 pb-3" style="background-color:#808080;border-radius:15px" >
+                          
+                          <!--Carousel Wrapper-->
+                          <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item mb-5" data-ride="carousel">
+                      
+                            <!--Controls-->
+                            <!-- <div class="controls-top">
+                              <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                              <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                            </div> -->
+                            <!--Controls-->
+                      
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                              <li data-target="#multi-item-example" data-slide-to="0" class="active white darken-4"></li>
+                              <li data-target="#multi-item-example" data-slide-to="1" class="white darken-4"></li>
+                              <li data-target="#multi-item-example" data-slide-to="2" class="white darken-4"></li>
+                            </ol>
+                            <!--Indicators-->
+                      
+                            <!--Slides-->
+                            <div class="carousel-inner" role="listbox">
+                      
+                              <!--First slide-->
+                              <div class="carousel-item active">
+                                <div class="row">
+                                   <!--Grid column-->
+                                  <div class="col-md-10 offset-1">
+                                      <div class="testimonial">
+                                        
+                                        <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>Mayfair Design Studio is one of the most professional and creative Architectural firms I have ever worked with. Their attention to detail and leading design trends make them one of the best firms I have ever worked with.</p>
+                                          <h6 class="font-weight-bold mt-4  white-text">Michael Momodu<span style="color:orange"> Customer</span></h6>
+                                          <!-- <h6 class="blue-text font-weight-bold my-3">Web Designer</h6> -->
+                                      </div>
+                                  </div>
                                 </div>
                               </div>
+                               
+                              <!--First slide-->
+                      
+                              <!--Second slide-->
+                              <div class="carousel-item">
+                      
+                               <div class="row">
+                                  <!--Grid column-->
+                                  <div class="col-md-10 offset-1">
+                                    <div class="testimonial">
+                                      <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>Working with Mayfair has been a pleasure and a positive experience. The design team went above and beyond their call of duty. We ended up with an environment that is beautiful, functional and very unique.</p>
+                                        <h6 class="font-weight-bold mt-4 white-text">Vivienne Kolade <span style="color:orange"> Customer</span></h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--Second slide-->
+                              <!--third slide-->
+                              <div class="carousel-item">
+                              
+                                  <div class="row">
+                                    <!--Grid column-->
+                                    <div class="col-md-10 offset-1">
+                                      <div class="testimonial">
+                                        <p class="font-weight-normal white-text"><i class="fa fa-quote-left pr-2"></i>I want to thank each of you for your efforts and “out of the box” performance in completing this project. I am very appreciative of the cooperation and flexibility your company utilized to achieve this successful completion.</p>
+                                          <h6 class="white-text font-weight-bold mt-4">Godwin Director <span style="color:orange">Construction</h6>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <!--third slide-->
+                              
+                      
                             </div>
+                            <!--Slides-->
+                      
                           </div>
-                          <!--third slide-->
-                        
-                
+                          <!--Carousel Wrapper-->
+                      
+                        </div>
+                        <!-- Grid row -->
+                      
+                      </section>
+                      <!-- Section: Testimonials v.4 -->
+                  </div>
+                  <div class="col-md-6 offset-1 mt-5 text-center">
+                      <div class="row mt-5">
+                        <div class="col-md-6">
+                          <img src="img/brand-1.png" class="img-responsive">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="img/brand-2.jpg" class="img-responsive">
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <img src="img/brand-3.jpg" class="img-responsive">
+                          </div> -->
                       </div>
-                      <!--Slides-->
-                
-                    </div>
-                    <!--Carousel Wrapper-->
-                
+                      <div class="row mt-5" id="logo">
+                        <div class="col-md-6">
+                          <img src="img/brand-4.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="img/brand-5.jpg" class="img-responsive">
+                        </div>
+                        <!-- <div class="col-md-4">
+                            <img src="img/brand-6.jpg" class="img-responsive">
+                          </div> -->
+                      </div>
+                      <div class="row mt-5 mb-5">
+                        <div class="col-md-6">
+                          <img src="img/brand-6.jpg" class="img-responsive">
+                        </div>
+                        <div class="col-md-6">
+                          <img src="img/brand-3.jpg" class="img-responsive">
+                        </div>
+                      </div>
                   </div>
-                  <!-- Grid row -->
-                
-                </section>
-                <!-- Section: Testimonials v.4 -->
             </div>
-            <div class="col-md-7 offset-1 mt-5 text-center">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="img/brand-1.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="row mt-5">
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="img/brand-1.png" class="img-responsive">
-                    </div>
-                </div>
-                <div class="row mt-5 mb-5">
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                    <img src="img/brand-1.png" class="img-responsive">
-                  </div>
-                  <div class="col-md-4">
-                      <img src="img/brand-1.png" class="img-responsive">
-                    </div>
-                </div>
-            </div>
+            
           </div>
       </div>
     </div>
     <div class="text-center mt-5">
       <h1 class="font-weight-bold"> Latest Articles</h1>
     </div>
-    <div id="myBtnContainer" style="text-align:center" class="mt-5 mb-3">
-        <button class="btn active" onclick="filterSelection('all')"> All Articles</button>
+    <div id="myBtnContainer" style="text-align:center" class="mt-5 mb-3 out">
+        <!-- <button class="btn active" onclick="filterSelection('all')"> All Articles</button> -->
         <!-- <p class="active" onclick="filterSelection('all')">All Projects</p> -->
-        <button class="btn" onclick="filterSelection('commercial')"> Commercial</button>
+        <!-- <button class="btn" onclick="filterSelection('commercial')"> Commercial</button>
         <button class="btn" onclick="filterSelection('Architecture')"> Architecture</button>
         <button class="btn" onclick="filterSelection('residential')"> Residential</button>
-        <button class="btn" onclick="filterSelection('planning')"> Planning</button>
+        <button class="btn" onclick="filterSelection('planning')"> Planning</button> -->
+
+        <a class="out active" onclick="filterSelection('all')" > All Articles</a>
+        <a class="out" onclick="filterSelection('commercial')">Commercial</a>
+        <a class="out" onclick="filterSelection('Architecture')"> Architecture</a>
+        <a class="out" onclick="filterSelection('residential')"> Residential</a>
+        <a class="out" onclick="filterSelection('planning')"> Planning</a>
     </div>
     <div class="container">
-      <div class="row new">
+      <div class="row new" id="newest">
           <div class="column Architecture">
             <div class="content">
               <a href="#">
@@ -676,7 +690,7 @@
           <div class="container">
 
             <!-- Grid row-->
-            <div class="row py-4 d-flex align-items-center mb-5">
+            <div class="row py-4 d-flex align-items-center mb-5 mt-2">
 
               <!-- Grid column -->
               <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
@@ -732,7 +746,7 @@
                 <a href="#!">Unique Designs</a>
               </p>
               <p>
-                <a href="#!">Outstanding Designsr</a>
+                <a href="#!">Outstanding Designs</a>
               </p>
 
             </div>
@@ -786,22 +800,25 @@
         <div class="row p-0 m-0">
           <div class="container">
             <div class="row">
-                <div class="col-md-3" id="bottom">
+                <div class="col-md-2" id="bottom">
                     <img src="img/logo.png" class="img-fluid" style="width:50px;height:60px">
                   </div>
-                <div class="col-md-4">
-                  <ul class="nav justify-content-center">
+                <div class="col-md-5">
+                  <ul class="nav justify-content-center font-weight-bold">
                     <li class="nav-item">
-                      <a class="nav-link active" href="#" id="down">About</a>
+                      <a class="nav-link active" href="#" id="down">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="down">Shop</a>
+                      <a class="nav-link" href="#" id="down">SERVICES</a>
                     </li>
                     <li class="nav-item">
+                      <a class="nav-link" href="#" id="down">SHOP</a>
+                    </li>
+                    <!-- <li class="nav-item">
                       <a class="nav-link" href="#" id="down">FAQ</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
-                      <a class="nav-link" href="#" id="down">Contact</a>
+                      <a class="nav-link" href="#" id="down">CONTACT</a>
                     </li>
                     
                   </ul>
